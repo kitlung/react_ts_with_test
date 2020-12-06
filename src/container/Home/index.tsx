@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = (props: any) => {
+const Home: React.FunctionComponent = () => {
   return <div>123</div>;
 };
 
