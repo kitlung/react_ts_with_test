@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home: React.FunctionComponent = () => {
-  return <div>123</div>;
+  return <div>Todo List</div>;
 };
 
 export default Home;
