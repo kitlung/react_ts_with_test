@@ -1,9 +1,15 @@
+import { shallow } from 'enzyme';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
 import App from './App';
+import Home from './container/Home';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('rendering components', () => {
+  it('render App component without crashing', () => {
+    shallow(<App />);
+  });
+  it('render home page without crashing', () => {
+    const wrapper = shallow(<App />);
+    const homePage = <Home />;
+    expect(wrapper.contains(homePage)).toEqual(true);
+  });
 });
