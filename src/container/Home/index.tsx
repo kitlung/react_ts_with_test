@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
+import Title from '../../component/Title';
 
-const Home: React.FunctionComponent = () => {
-  return <div>Todo List</div>;
+const Home: FC = () => {
+  return <Title title="Todo List" />;
 };
 
 export default Home;
